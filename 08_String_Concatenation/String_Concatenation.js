@@ -107,39 +107,6 @@ console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
   1. An **array of string literals**.
   2. An **array of values** passed inside `${}`.
 - Useful for escaping characters, formatting text, localization, etc.
+====> Details in "String_Tag_Template.js"
 */
-
-function myTag(strings, ...values) {
-	console.log("Strings Array:", strings);
-	console.log("Values Array:", values);
-	return "🔹 Custom Processed String";
-}
-
-let customResult = myTag`Hello ${name}, Your Age is: ${age2} years old.`;
-console.log(customResult);
-// Outputs: 🔹 Custom Processed String
-
-
-function format(strings, ... values) {
-   return strings.reduce((acc, str, i) => acc + str + (values[i] ? `🔹${values[i]}🔹` : ""), "");
-}
-
-let user = "Bassel";
-let score = 95;
-
-console.log(format`User: ${user}, Score: ${score} !`);
-Outputs: "User: 🔹Bassel🔹, Score: 🔹95🔹"
-
-function escapeHTML(strings, ...values) {
-   return strings.reduce((acc, str, i) => {
-       let escaped = values[i]?.replace(/</g, "&lt;").replace(/>/g, "&gt;") || "";
-       return acc + str + escaped;
-   }, "");
-}
-
-let userInput = `<script>alert('Hacked!')</script>`;
-console.log(escapeHTML`User Input: ${userInput}`);
-// Outputs: "User Input: &lt;script&gt;alert('Hacked!')&lt;/script&gt;"
-
-
 
