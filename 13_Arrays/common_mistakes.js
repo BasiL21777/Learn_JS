@@ -1,3 +1,5 @@
+// Lesson 6
+
 'use strict'; // ✅ Enforces better coding practices and helps catch common mistakes
 
 // ✅ Forgetting that these methods modify the original array:

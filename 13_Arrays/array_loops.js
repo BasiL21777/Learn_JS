@@ -1,3 +1,4 @@
+// Lesson 3
 'use strict'; // Enforce strict mode for better coding practices
 
 // ========================= Array Looping Methods =========================
@@ -120,5 +121,3 @@ console.timeEnd("Loop with recalculated length");
 ❌ Avoid recalculating `.length` inside loops for large datasets.
 
 */
-
-console.log("\n✅ Enhanced JavaScript Array Looping Guide Completed!");

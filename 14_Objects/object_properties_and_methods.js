@@ -1,3 +1,4 @@
+// Lesson 2
 'use strict'; // Enforces strict mode for better coding practices
 
 // ========================= Checking if a Property Exists =========================

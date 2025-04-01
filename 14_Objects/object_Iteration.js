@@ -1,3 +1,4 @@
+// Lesson 3
 'use strict'; // Enforce strict mode for better coding practices
 
 // ========================= Iterating Over Objects =========================

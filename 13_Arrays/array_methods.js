@@ -1,3 +1,4 @@
+// Lesson 2
 'use strict'; // Enforce strict mode for better coding practices
 
 // ========================= Array Methods (Mutating) =========================
@@ -131,5 +132,3 @@ console.log("Queue after shift:", queue); // [2, 3]
    🔹 Stack (LIFO)  → push(), pop()
    🔹 Queue (FIFO)  → push(), shift()
 */
-
-console.log("\n✅ Enhanced JavaScript Array Methods Guide Completed!");

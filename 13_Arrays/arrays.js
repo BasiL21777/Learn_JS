@@ -1,3 +1,4 @@
+// Lesson 1
 'use strict'; // Enforce strict mode for better coding practices
 
 // ========================= Introduction to Arrays =========================
@@ -50,11 +51,11 @@ console.log(numbers); // [10, 2, 3, 4, 5, 6]
 // ========================= Adding Elements =========================
 
 numbers[6] = 20; // Adds a new element at index 6
-console.log(numbers); // [10, 2, 3, 4, 5, 6, 20]
+console.log("Add Element: ",numbers); // [10, 2, 3, 4, 5, 6, 20]
 
 // ❌ Avoid sparse arrays (gaps in arrays)
 numbers[8] = 50; // Creates a gap (index 7 is missing)
-console.log(numbers); // [10, 2, 3, 4, 5, 6, 20, <empty>, 50]
+console.log("Spare Array: ",numbers); // [10, 2, 3, 4, 5, 6, 20, <empty>, 50]
 
 // ========================= Arrays Are Objects =========================
 
@@ -68,7 +69,7 @@ console.log(Array.isArray(arr)); // true
 arr.myProperty = "test";
 console.log(arr.myProperty); // "test" (but don’t use this)
 
-// ✅ Arrays store values at numerical indices
+// ✅
 arr = ["a", "b", "c"];
 arr["1"] = "d"; // Same as arr[1] = 'd'
 console.log(arr); // ["a", "d", "c"]
@@ -89,7 +90,7 @@ numbers.length = 5;
 console.log(numbers); // [1, 2, 3, empty × 2] (two empty slots)
 
 // ========================= Arrays Are Compared by Reference =========================
-
+//  Arrays store values at numerical indices
 let arr1 = [1, 2, 3];
 let arr2 = [1, 2, 3];
 
@@ -114,4 +115,3 @@ console.log(arr1 === arr3); // ✅ true (same reference)
    arr3 ---> Same memory address as arr1 (0x001), so `arr1 === arr3` is `true`.
 */
 
-console.log("\n✅ Enhanced JavaScript Array Guide Completed!");

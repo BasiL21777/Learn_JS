@@ -1,3 +1,5 @@
+// Lesson 5
+
 // Array destructuring allows you to extract values from arrays
 // into distinct variables in a single statement, making your code cleaner and more readable.
 

@@ -1,3 +1,4 @@
+// Lesson 1
 'use strict';  // Corrected 'use static' to 'use strict' to enforce secure coding practices
 
 /* Objects in JavaScript:
